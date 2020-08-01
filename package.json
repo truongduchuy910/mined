@@ -20,6 +20,7 @@
     "@keystonejs/adapter-mongoose": "^9.0.0",
     "@keystonejs/app-admin-ui": "^7.1.0",
     "@keystonejs/app-graphql": "^6.0.0",
+    "@keystonejs/app-static": "^5.1.2",
     "@keystonejs/auth-password": "^5.1.11",
     "@keystonejs/fields": "^14.0.0",
     "@keystonejs/keystone": "^12.0.0",
