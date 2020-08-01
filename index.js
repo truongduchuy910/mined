@@ -97,4 +97,7 @@ module.exports = {
       fallback: "index.html",
     }),
   ],
+  configureExpress: (app) => {
+    app.set("trust proxy", true);
+  },
 };
