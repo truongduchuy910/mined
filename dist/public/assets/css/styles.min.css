@@ -257,8 +257,8 @@ section {
     margin-bottom: 50px;
   }
   .text-bg-2 {
-    height: 80px;
-    background-size: 1920px !important;
+    height: 100px;
+    background-size: 2500px !important;
   }
 }
 @media (min-width: 1200px) {
