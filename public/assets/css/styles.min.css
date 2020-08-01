@@ -200,7 +200,7 @@ section {
 }
 .text-bg-2 {
   height: 40px;
-  background-size: 960px !important;
+  background-size: 1240px !important;
   background: url(/assets/img/Layer%2014.png?h=e8408472d3d1ad0c9aa2be9121ac2c18)
     50% no-repeat;
   animation: 20s linear infinite animatedBackground-2;
