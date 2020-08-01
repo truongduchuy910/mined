@@ -60,11 +60,21 @@ keystone.createList("User", {
   },
   // List-level access controls
   access: {
-    read: access.userIsAdminOrOwner,
+    read: true,
     update: access.userIsAdminOrOwner,
-    create: access.userIsAdmin,
+    create: true,
     delete: access.userIsAdmin,
     auth: true,
+  },
+});
+
+keystone.createList("Customer", {
+  fields: {
+    email: {
+      type: Text,
+      isUnique: true,
+      isRequired: true,
+    },
   },
 });
 

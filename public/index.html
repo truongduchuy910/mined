@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Doyoumined</title>
+    <title>Mine'd | Self-Help, Together</title>
     <meta name="twitter:title" content="Doyoumined" />
     <meta
       name="twitter:image"
@@ -138,7 +138,7 @@ Treat your well-being like your side hustle."
                   data-aos-duration="400"
                   style="font-size: 64px;font-weight: bold;font-family: 'Raisonne AN';"
                 >
-                  Mine'd | Self-Help, Together.
+                  Self-Help, Together.
                 </h1>
                 <div class="divider-1"></div>
                 <h5
@@ -152,22 +152,24 @@ Treat your well-being like your side hustle."
                   connects you with top emotional wellness experts and community
                   through daily live and on-demand classes.
                 </h5>
-                <form data-bss-recipient="5bbbc3a216f2b595a2c41fdf975f0c8b">
-                  <input
-                    class="form-control text-input"
-                    type="email"
-                    placeholder="MyName@RadEmail.com"
-                    name="email"
-                    required=""
-                  /><button
-                    class="btn btn-dark btn-m"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    type="submit"
-                  >
-                    Get Early Access!
-                  </button>
-                </form>
+                <input
+                  id="email"
+                  class="form-control text-input"
+                  type="email"
+                  placeholder="MyName@RadEmail.com"
+                  name="email"
+                  required=""
+                />
+
+                <button
+                  id="btn-submit"
+                  class="btn btn-dark btn-m "
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  type="submit"
+                >
+                  Get Early Access!
+                </button>
                 <p data-aos="fade-up" data-aos-duration="650">
                   Coming August 2020
                 </p>
@@ -535,22 +537,23 @@ Treat your well-being like your side hustle."
           class="container d-flex justify-content-center align-items-center signup"
         >
           <div class="text-center py-3" style="width: 100%;">
-            <form data-bss-recipient="5bbbc3a216f2b595a2c41fdf975f0c8b">
-              <p class="text-white">Get Early Access:</p>
-              <input
-                class="form-control text-input-1"
-                type="email"
-                placeholder="MyName@RadEmail.com"
-                name="email"
-                required=""
-              /><button
-                class="btn btn-warning"
-                type="submit"
-                style="width: 100%;max-width: 450px;margin-top: 15px;border-radius: 0px;font-weight: bold;"
-              >
-                Let's Do This!
-              </button>
-            </form>
+            <p class="text-white">Get Early Access:</p>
+
+            <input
+              id="email-1"
+              class="form-control text-input-1"
+              type="email"
+              placeholder="MyName@RadEmail.com"
+              name="email"
+              required=""
+            />
+            <button
+              id="btn-submit-1"
+              class="btn btn-warning"
+              style="width: 100%;max-width: 450px;margin-top: 15px;border-radius: 0px;font-weight: bold;"
+            >
+              Let's Do This!
+            </button>
           </div>
         </div>
       </section>
@@ -602,6 +605,22 @@ Treat your well-being like your side hustle."
         </div>
       </section>
     </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog align-self-center">
+        <div class="modal-content">
+          <div class="modal-body" id="alert"></div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/smart-forms.min.js?h=0c556d5438933bda409408695b5733e7"></script>
