@@ -81,7 +81,7 @@ section {
   display: inline-block;
   overflow: hidden;
   max-width: 100%;
-  height: auto;
+  transition: height ease-out 2s;
 }
 .hvrbox img {
   max-width: 100%;
@@ -92,6 +92,8 @@ section {
 }
 .hvrbox .hvrbox-layer_top {
   opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
   position: absolute;
   top: 0;
   left: 0;
@@ -111,14 +113,12 @@ section {
 .hvrbox .hvrbox-text {
   width: 100%;
   padding: 13px;
-  text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-height: 225px;
 }
 .hvrbox .hvrbox-text_mobile {
   font-size: 15px;
@@ -169,6 +169,15 @@ section {
 .signup {
   position: relative;
 }
+@-webkit-keyframes animatedBackground {
+  0%,
+  100% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 100%;
+  }
+}
 @keyframes animatedBackground {
   0%,
   100% {
@@ -176,6 +185,15 @@ section {
   }
   50% {
     background-position: 100%;
+  }
+}
+@-webkit-keyframes animatedBackground-2 {
+  0%,
+  100% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 0;
   }
 }
 @keyframes animatedBackground-2 {
@@ -260,6 +278,10 @@ section {
     height: 100px;
     background-size: 2500px !important;
   }
+
+  #header {
+    margin-top: 15vh;
+  }
 }
 @media (min-width: 1200px) {
   .signup {
@@ -270,12 +292,12 @@ section {
     margin-bottom: 50px;
   }
   #header {
-    margin-top: 25%;
+    margin-top: 20vh;
   }
 }
 @media (min-width: 1440px) {
   #header {
-    margin-top: 35%;
+    margin-top: 30vh;
   }
 }
 @media (min-width: 1430) {
@@ -285,7 +307,7 @@ section {
   }
 }
 .divider-1 {
-    color: orange;
+  color: orange;
   margin: 34px 0;
   border: 1.5px solid;
   width: 30px;
