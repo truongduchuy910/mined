@@ -89,6 +89,7 @@ section {
 .hvrbox .hvrbox-layer_bottom,
 .hvrbox.active .hvrbox-text_mobile {
   display: block;
+  max-width: "95wv";
 }
 .hvrbox .hvrbox-layer_top {
   opacity: 0;
@@ -229,6 +230,9 @@ section {
 }
 #header {
   margin-top: 15%;
+}
+#mainNav {
+  /* max-height: "100wv"; */
 }
 @media (max-width: 576px) {
   #header {
