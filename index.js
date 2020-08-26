@@ -78,6 +78,16 @@ keystone.createList("Customer", {
   },
 });
 
+// keystone.createList("Expert", {
+//   fields: {
+//     email: {
+//       type: Text,
+//       isUnique: true,
+//       isRequired: true,
+//     },
+//   },
+// });
+
 const authStrategy = keystone.createAuthStrategy({
   type: PasswordAuthStrategy,
   list: "User",
